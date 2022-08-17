@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form assignment</title>
+   
+    
+</head>
+<body>
+<div style="background-color:rgba(215, 94, 8, 0.785);height: 70px; width: 100%;">
+<h1 style="position:relative;left:90px;top:15px;">Practise</h1>
+</div>
+<p style="position:relative;left:40px;top:20px;font-size: 20px;">Asagidaki kayit formunu olusturunuz. En uygun sekilde form validasyonu yapiniz.</p>
+<br>
+<br>
+<form action="result.html">
+<div style="width: 50%; height: 100px; float: left;position:relative;left:60px;">
+    <div>
+        <label style="margin-right: 60px;" for="ad">Adi</label>
+        <input id="ad" name="Ad" value="" type="text" required>
+
+    </div>    
+<br>
+    <div>
+        <label style="margin-right: 40px;" for="soyad">Soyadi</label>
+        <input id="soyad" name="Soyad" value="" type="text" required>
+
+    </div>    
+<br>
+    <div>
+       
+        <label style="margin-right: 25px;" for="cinsiyet">Cinsiyet</label>
+        <input type="radio" name="cinsiyet" value="erkek" id="erkek" required>
+        <label for="erkek">Bay</label>
+        <input type="radio" name="cinsiyet" value="kadin" id="kadin">
+        <label for="kadin">Bayan</label>
+        
+    </div>
+<br>
+    <div>
+       
+            <label style="margin-right: 60px;" for="ilce">Ilce</label>
+            <select name="Ilce" id="ilce" style="height:25px; width:180px">
+            <optgroup label="Istanbul">
+              <option value="avcilar">Avcilar</option>
+              <option value="atasehir">Atasehir</option>
+              <option value="bakirkoy">Bakirkoy</option>
+              <option value="umraniye">Umraniye</option>
+            </optgroup>
+
+            <optgroup label="Ankara">
+              <option value="golbasi">Golbasi</option>
+              <option value="mamak">Mamak</option>
+            </optgroup>
+          </select>
+    </div>    
+<br>
+
+    <div>
+        <label style="margin-right: 40px;" for="email">Eposta</label>
+        <input type="text" name="Eposta" id="email" value="" required>
+
+    </div>
+<br>
+    <div>
+        <label style="margin-right: 10px;" for="Kisisel-site">Kisisel Site</label>
+        <input type="text" name="kisisel-site" value="" id="Kisisel site">
+
+    </div>
+
+<br>
+    <div>
+        <label style="margin-right: 35px;" for="telefon">Telefon</label>
+        <input type="tel" name="telefon-numarasi" id="telefon" value="">
+    </div>
+</div>
+<br>
+
+    <div>
+        <table>
+            <tr>
+                <td><label for="hobiler" style="margin-right: 70px;">Hobiler</label></td>
+                
+                <td><input id="futbol" type="checkbox" name="hobiler" value="futbol">
+       <label for="futbol">Futbol</label></td>
+            </tr>
+            <tr>
+                
+                <td></td>
+                <td><input id="voleybol" type="checkbox" name="hobiler" value="voleybol"><label for="voleybol">Voleybol</label></td>
+            </tr>
+            <tr>
+                
+                <td></td>
+                <td><input id="basketbol" type="checkbox" name="hobiler" value="basketbol"><label for="basketbol">Basketbol</label></td>
+            </tr>
+        </table>
+    </div>
+<br>
+    <div div style="width: 50%; height: 100px; float: right;">
+        <div>
+        <label style="margin-right: 25px;" for="profil-resmi">Profil Fotografi</label>
+        <form action="/action_page.php">
+        <input type="file" id="myFile" name="filename">
+        </form>
+
+        </div>
+<br>
+    <div>
+        <label style="margin-right: 35px;" for="dogum-tarihi">Dogum Tarihi</label>
+        <input type="date" id="dogum-tarihi" name="dogum-tarihi" value="" required>
+
+
+    </div> 
+<br>
+
+    <div>
+    <label style="margin-right: 85px; position:relative; left:0px; top:-30px" for="adres">Adres</label>
+    <input  style="height: 70px;" type="text" name="adres" id="adres" value="" required>
+    
+    </div>
+        <div style = "position:relative; left:125px; top:5px">
+        <input  type="submit" value="Kayit ol" style="height:35px; width:120px">
+        
+        </div>
+
+    </div>   
+
+        
+
+        
+        
+        
+    
+</div>
+</form>
+</body>
+</html>
